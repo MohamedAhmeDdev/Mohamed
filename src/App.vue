@@ -59,7 +59,7 @@
                       <h3 class="flex items-center mb-1 text-lg font-semibold text-white dark:text-white">Diploma in Software Development</h3>
                       <p class="flex items-center mb-1 text-lg font-semibold text-white dark:text-white">Institute of Software technologies</p>
                       <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022 - February 2023</time>
-                      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">During my time in the diploma class, I gained valuable experience in coding through various projects and assignments, which helped me develop my skills and understanding of programming concepts.</p>
+                      <p class="mb-4 text-base font-light font-san text-white">During my time in the diploma class, I gained valuable experience in coding through various projects and assignments, which helped me develop my skills and understanding of programming concepts.</p>
                     </div>   
                   </li>
                   <li class="ml-6">
@@ -70,7 +70,7 @@
                       <h3 class="mb-1 text-lg font-semibold text-white dark:text-white">Certificate in Software Development</h3>
                       <p class="mb-1 text-lg font-semibold text-white dark:text-white">Institute of Software technologies</p>
                       <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2021 - January 2022</time>
-                      <p class="text-base font-normal text-gray-500 dark:text-gray-400">Joining a coding class for the first time was an exciting and slightly intimidating experience for me, but I was eager to learn and dive into the world of programming with the help of the trainers.</p>
+                      <p class="text-base font-light font-san  text-white">Joining a coding class for the first time was an exciting and slightly intimidating experience for me, but I was eager to learn and dive into the world of programming with the help of the trainers.</p>
                     </div>
                   </li>
               </ol>
@@ -95,9 +95,9 @@
                   <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                 </div>
                 <div class="py-5">
-                  <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize">source code</button>
+                  <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a></button>
                   <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a title="user" href="https://double-diner-user.vercel.app/" target="_blank">Live Display</a></button>
-                  <button class="border border-yellow-200  rounded-md mx-3 py-1 mt-5 px-2 md:mt-0 text-md text-sm text-white capitalize"><a title="admin dashboard" href="https://double-diner-admin.vercel.app/Login" target="_blank">Live Display</a></button>
+                  <!-- <button class="border border-yellow-200  rounded-md mx-3 py-1 mt-5 px-2 md:mt-0 text-md text-sm text-white capitalize"><a title="admin dashboard" href="https://double-diner-admin.vercel.app/Login" target="_blank">Live Display</a></button> -->
                 </div>
               </div>
 
@@ -115,7 +115,7 @@
                   <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                 </div>
                 <div class="py-5">
-                  <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize">source code</button>
+                  <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Household-management-system" target="_blank">source code</a></button>
                   <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://household-app.vercel.app/" target="_blank">Live Display</a></button>
                 </div>
               </div>
@@ -134,7 +134,7 @@
                     <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                   </div>
                   <div class="py-5">
-                    <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize">source code</button>
+                    <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button>
                     <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize">Live Display</button>
                   </div>
               </div>  
