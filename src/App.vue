@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <inject/>
+   </div>
+
   <div class="bg-primary ">
     <div class="max-w-7xl mx-auto py-9 px-4">
         <div class="items-center relative">
