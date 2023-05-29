@@ -1,6 +1,6 @@
 <template>
   <div>
-    <inject/>
+    <Analytics/>
    </div>
 
   <div class="bg-primary ">
