@@ -139,9 +139,27 @@
                   </div>
                   <div class="py-5">
                     <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button>
-                    <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize">Live Display</button>
                   </div>
               </div>  
+
+              <div class="div-bg flex flex-col rounded-md overflow-hidden">
+                  <div class="p-3 flex-shrink-0">
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/115/431/original/coming-soon-business-sign-free-vector.jpg" class="h-sm-7 h-48 w-full rounded-lg object-cover">
+                  </div>
+                  <div class="p-3 flex flex-col justify-between ">
+                      <p class="text-xl font-semibold text-white text-center">medops</p>
+                      <p class=" text-base text-md font-light font-sans text-white">The MedOps is a software application designed to streamline the inventory management and distribution process within a medical warehouse.</p>  
+                  </div>
+                  <div class="flex justify-center py-2">
+                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
+                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                  </div>
+                  <div class="py-5">
+                    <!-- <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button> -->
+                    <p class="text-2xl font-semibold text-white text-center">Ongoing</p>
+                  </div>
+              </div> 
                       
           </div>
         </div>
