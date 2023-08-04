@@ -8,13 +8,13 @@
         <div class="items-center relative">
           <h2 class="text-lg md:text-3xl font-bold text-primary-text font-sans capitalize">Who am I</h2>
           <div class="mx-auto rounded-full h-48 w-48  lg:h-80 lg:w-80">
-            <img src="https://mohamedahmedm.vercel.app/image/1667145901902-removebg-preview%20(3).png" alt="Profile Picture" class="w-full h-full mb-4 rounded-full">
+            <img src="https://avatars.githubusercontent.com/u/92859355?v=4" alt="Profile Picture" class="w-full h-full mb-4 rounded-full">
           </div>
           <div class="text-center mt-10">
             <h1 class="text-white text-xl md:text-4xl font-medium md:font-bold font-sans">Frontend Developer</h1>
             <p class="text-sm md:text-lg text-white font-sans">Hey there, i'm Mohamed Ahmed. a Frontend Developer</p>
 
-            <button class="btn capitalize font-semibold rounded-sm mt-5 px-7 py-1"><a href="https://docs.google.com/file/d/1qAAqZ_0nqGFcRBwxrvJG7oBcqskPp-Sc/edit?filetype=msword" target="_blank" >download CV</a></button>
+            <button class="btn capitalize font-semibold rounded-sm mt-5 px-7 py-1"><a href="https://drive.google.com/file/d/1EyebbpgBLNt-e4pw7U6-M2fR3X3x04uK/view?usp=drivesdk" target="_blank" >download CV</a></button>
           </div>
           
             <div class="absolute top-40 md:top-60">
@@ -98,11 +98,21 @@
                   <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
                   <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                 </div>
-                <div class="py-5">
-                  <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a></button>
-                  <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a title="user" href="https://double-diner-user.vercel.app/" target="_blank">Live Display</a></button>
-                  <!-- <button class="border border-yellow-200  rounded-md mx-3 py-1 mt-5 px-2 md:mt-0 text-md text-sm text-white capitalize"><a title="admin dashboard" href="https://double-diner-admin.vercel.app/Login" target="_blank">Live Display</a></button> -->
+
+                <div class="py-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 justify-items-center">
+                    <div class="">
+                      <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a></button>
+                    </div>
+                    <div class="">
+                      <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://double-diner-user.vercel.app/" target="_blank">User</a></button>
+                    </div>
+                    <div class="">
+                      <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://double-diner-admin.vercel.app/Login" target="_blank">Admin</a></button>
+                    </div>
+                    
+                  
                 </div>
+
               </div>
 
               <div class="div-bg flex flex-col rounded-md overflow-hidden">
@@ -118,7 +128,7 @@
                   <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
                   <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                 </div>
-                <div class="py-5">
+                <div class="flex justify-center py-5">
                   <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Household-management-system" target="_blank">source code</a></button>
                   <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://household-app.vercel.app/" target="_blank">Live Display</a></button>
                 </div>
@@ -137,7 +147,7 @@
                     <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
                     <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                   </div>
-                  <div class="py-5">
+                  <div class="flex justify-center py-5">
                     <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button>
                   </div>
               </div>  
@@ -155,7 +165,7 @@
                     <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
                     <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                   </div>
-                  <div class="py-5">
+                  <div class="flex justify-center py-5">
                     <!-- <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button> -->
                     <p class="text-2xl font-semibold text-white text-center">Ongoing</p>
                   </div>
@@ -205,6 +215,9 @@ export default {
 }
 .div-bg{
   background-color: rgba(231, 206, 176, 0.063)
+}
+.bg-button {
+  background-color: #151314;
 }
 .timeline{
   background-color: #fbbc04
