@@ -14,7 +14,7 @@
             <h1 class="text-white text-xl md:text-4xl font-medium md:font-bold font-sans">Frontend Developer</h1>
             <p class="text-sm md:text-lg text-white font-sans">Hey there, i'm Mohamed Ahmed. a Frontend Developer</p>
 
-            <button class="btn capitalize font-semibold rounded-sm mt-5 px-7 py-1"><a href="https://drive.google.com/file/d/1BOInNg3_WUxaLuKaFQRjMQnfOOQKS-3t/view?usp=drivesdk" target="_blank" >download CV</a></button>
+            <button class="btn capitalize font-semibold rounded-sm mt-5 px-7 py-1"><a href="https://drive.google.com/file/d/1UADF3fkF9xY6iMofwglGkFqX6geCGtP4/view?usp=drive_link" target="_blank" >download CV</a></button>
           </div>
           
             <div class="absolute top-40 md:top-60">
