@@ -1,14 +1,67 @@
 <template>
+
+<div v-if="loading" class="loading-spinner"></div>
+
+  <div v-else>
   <div>
     <Analytics/>
    </div>
 
   <div class="bg-primary ">
-    <div class="max-w-7xl mx-auto py-9 px-4">
-        <div class="items-center relative">
-          <h2 class="text-lg md:text-3xl font-bold text-primary-text font-sans capitalize">Who am I</h2>
+    <div class="max-w-6xl mx-auto pt-2 px-4">
+
+      <div class="flex h-16 items-center">
+          <div class="flex-shrink-0">
+            <a href="/" class="text-xl font-bold text-white font-sans capitalize">Mohamed Ahmed</a>  
+          </div>
+    
+          <div :class="{'hidden md:flex flex-1 justify-center space-x-6': !showMobileMenu, 'flex flex-col absolute top-20 left-0 right-0 bg-primary z-10': showMobileMenu}" >
+              <a href="/" @click="showMobileMenu = false" :class="{'text-white  font-medium block md:inline-block nav-link': !showMobileMenu,
+              'text-white  font-medium block md:inline-block ml-10 my-2 md:my-0': showMobileMenu }">
+                  Home
+              </a>
+         
+              <a href="#about" @click="showMobileMenu = false" :class="{'text-white  font-medium block md:inline-block nav-link': !showMobileMenu,
+              'text-white  font-medium block md:inline-block ml-10 my-2 md:my-0': showMobileMenu }">
+                About
+              </a>
+
+              <a href="#technologies" @click="showMobileMenu = false" :class="{'text-white  font-medium block md:inline-block nav-link': !showMobileMenu,
+              'text-white  font-medium block md:inline-block ml-10 my-2 md:my-0': showMobileMenu }">
+                 Technologies
+              </a>
+
+              <a href="#education" @click="showMobileMenu = false" :class="{'text-white  font-medium block md:inline-block nav-link': !showMobileMenu,
+              'text-white  font-medium block md:inline-block ml-10 my-2 md:my-0': showMobileMenu }">
+                  Education
+              </a>           
+
+              <div class="space-x-6">
+              <a href="#project" @click="showMobileMenu = false" :class="{'text-white  font-medium block md:inline-block nav-link': !showMobileMenu,
+              'text-white  font-medium block md:inline-block ml-10 my-2 md:my-0': showMobileMenu }" >
+               Projects
+              </a>
+
+              <a href="#contact" @click="showMobileMenu = false" :class="{'text-white  font-medium block md:inline-block nav-link': !showMobileMenu,
+              'text-white pl-4 font-medium block md:inline-block ml-10 my-2 md:my-0': showMobileMenu }" >
+               Contact
+              </a>
+            </div>
+          </div>
+  
+        
+          <div class="md:hidden ml-auto">
+            <button @click="showMobileMenu = !showMobileMenu" class="flex items-center px-3 py-2 rounded text-gray-500  focus:outline-none" aria-label="Toggle Menu">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+      </div> 
+  
+        <div id="home" class="items-center pt-10 relative">
           <div class="mx-auto rounded-full h-48 w-48  lg:h-80 lg:w-80">
-            <img src="https://avatars.githubusercontent.com/u/92859355?v=4" alt="Profile Picture" class="w-full h-full mb-4 rounded-full">
+            <img src="https://avatars.githubusercontent.com/u/92859355?v=4" alt="Profile Picture" class="w-full h-full mb-4 rounded-full -z-10">
           </div>
           <div class="text-center mt-10">
             <h1 class="text-white text-xl md:text-4xl font-medium md:font-bold font-sans">Frontend Developer</h1>
@@ -29,59 +82,125 @@
             </div>
         </div>
 
-        <div class="pt-10 md:pt-24 md:flex md:items-center md:justify-center mx-auto ">
-          <h3 class="text-sm md:text-xl mb-3 lg:mb-0 font-bold text-primary-text font-sans">Tech stack:</h3>
-            <p class="flex ml-5">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-            <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a>
-            <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a>
-            <a class="bg-white" href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="36" height="36" alt="NextJs" /></a>
-            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>  
-            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  
-            <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-            <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a>
-            <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
-            </p>
-        </div>
-
-        <div class="pt-16 md:pt-32">
-          <h2 class="text-lg md:text-3xl font-bold text-primary-text capitalize">What i do</h2>
-          <p class="mt-4 text-white text-md sm:text-lg font-light font-sans tracking-wide sm:mt-5 md:mt-5  sm:max-w-xl sm:mx-auto  lg:mx-0">
+        <div id="about" class="pt-16 md:pt-32">
+          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">About Me</h2>
+          <p class="mt-4 text-white text-center text-md sm:text-lg font-light font-sans tracking-wide sm:mt-5 md:mt-5 opacity-90">
             As a front-end developer, I am passionate about creating user-friendly software that provides a seamless experience for the end-user. 
             I am dedicated to the art of designing and developing attractive and intuitive interfaces that are not only visually appealing but also highly functional. I take great satisfaction in seeing my work bring joy and value to users.
         </p>
         </div>
 
-        <div class="pt-16 md:pt-32">
-          <h2 class="text-lg md:text-3xl font-bold text-primary-text capitalize">What I've learned</h2>
-              <ol class="mt-10 relative border-l border-yellow-200">                  
-                  <li class="mb-10 ml-6"> 
-                    <div class="border border-yellow-200  rounded-md p-4">        
-                      <span class="timeline absolute flex items-center justify-center w-6 h-6  rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                          <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
-                      </span>
-                      <h3 class="flex items-center mb-1 text-lg font-semibold text-white dark:text-white">Diploma in Software Development</h3>
-                      <p class="flex items-center mb-1 text-lg font-semibold text-white dark:text-white">Institute of Software technologies</p>
-                      <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022 - February 2023</time>
-                      <p class="mb-4 text-base font-light font-san text-white">During my time in the diploma class, I gained valuable experience in coding through various projects and assignments, which helped me develop my skills and understanding of programming concepts.</p>
-                    </div>   
-                  </li>
-                  <li class="ml-6">
-                    <div class="border border-yellow-200  rounded-md p-4">       
-                      <span class="timeline absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                          <svg aria-hidden="true" class="w-3 h-3 text-blue-800 dark:text-blue-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
-                      </span>
-                      <h3 class="mb-1 text-lg font-semibold text-white dark:text-white">Certificate in Software Development</h3>
-                      <p class="mb-1 text-lg font-semibold text-white dark:text-white">Institute of Software technologies</p>
-                      <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">September 2021 - January 2022</time>
-                      <p class="text-base font-light font-san  text-white">Joining a coding class for the first time was an exciting and slightly intimidating experience for me, but I was eager to learn and dive into the world of programming with the help of the trainers.</p>
-                    </div>
-                  </li>
-              </ol>
+        <div id="technologies" class="pt-16 md:pt-32">
+          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">Technologies</h2>  
+            <div class="mt-10 mx-auto px-10 sm:px-0 md:px-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-6">
+
+            <div class="icon flex flex-col icon-div overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
+                  </p>
+                  <p class="text-md text-white opacity-50">Javascript</p>
+              </div>
+            </div>
+            <div class="icon flex flex-col icon-div overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
+                  </p>
+                  <p class="text-md text-white opacity-50">React.js</p>
+              </div>
+            </div>
+
+              <div class="icon flex flex-col icon-div overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a>
+                  </p>
+                  <p class="text-md text-white opacity-50">Vue.js</p>
+              </div>
+            </div>
+
+            <div class="icon flex flex-col icon-div overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a class="bg-white" href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="36" height="36" alt="NextJs" /></a>
+                  </p>
+                  <p class="text-md text-white opacity-50">Next.js</p>
+              </div>
+            </div>
+
+            <div class="icon flex flex-col icon-div overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>  
+                  </p>
+                  <p class="text-md text-white opacity-50">Html</p>
+              </div>
+            </div>
+
+            <div class="icon flex flex-col icon-div  overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  
+                  </p>
+                  <p class="text-md text-white opacity-50">Css</p>
+              </div>
+            </div>
+
+            <div class="icon flex flex-col icon-div overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a>
+                  </p>
+                  <p class="text-md text-white opacity-50">Tailwind</p>
+              </div>
+            </div>
+
+            <div class="icon flex flex-col icon-div overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3"> 
+                  <p class="text-xl font-semibold text-center mx-auto text-white"> 
+                    <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>
+                  </p>
+                  <p class="text-md text-lg text-white opacity-50">Bootstrap</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="pt-16 md:pt-32">
-          <h2 class="text-lg md:text-3xl font-bold text-primary-text capitalize">What I've accomplished</h2>
+        <div id="education" class="pt-16 md:pt-32">
+          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">What I've learned</h2>
+          <div class="mt-10  mx-auto px-10 sm:px-0 md:px-0  grid grid-cols sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
+
+            <div class="div-bg flex flex-col rounded-md overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3">
+                  <p>
+                    <span class="text-2xl font-bold text-yr">February</span> <span class="text-md font-bold text-yr">2022</span>
+                    <span class="text-2xl text-white text-yr">-</span>
+                    <span class="text-2xl font-bold text-yr">January</span> <span class="text-md font-bold text-yr">2023</span>
+                  </p>
+                  <p class="text-xl font-semibold text-white">Diploma In Software Development</p>
+                  <p class="text-md text-white opacity-50">Institute Of Software Technologies</p>
+                  <p class="mt-1 text-base font-sans opacity-90 font-light text-md text-white">Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.</p>
+              </div>
+            </div>
+
+            <div class="div-bg flex flex-col rounded-md overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3">
+                  <p>
+                    <span class="text-2xl font-bold text-yr">September</span> <span class="text-md font-bold text-yr">2021</span>
+                    <span class="text-2xl text-white text-yr">-</span>
+                    <span class="text-2xl font-bold text-yr">January</span> <span class="text-md font-bold text-yr">2022</span>
+                  </p>
+                  <p class="text-xl font-semibold text-white">Certificate In Software Development</p>
+                  <p class="text-md text-white opacity-50">Institute Of Software Technologies</p>
+                  <p class="mt-1 text-base font-sans opacity-90 font-light text-md text-white">Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.</p>
+              </div>
+            </div>
+         </div>
+        </div>
+
+        <div id="project" class="pt-16 md:pt-32">
+          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">What I've accomplished</h2>
            
           <div class="mt-10  mx-auto px-10 sm:px-0 md:px-0  grid grid-cols sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
 
@@ -94,11 +213,10 @@
                     <p class="mt-1 text-base font-sans font-light text-md text-white">Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.</p>
                 </div>
                 <div class="flex justify-center py-2">
-                  <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
-                  <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
-                  <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                 </div>
-
                 <div class="py-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 justify-items-center">
                     <div class="">
                       <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a></button>
@@ -109,10 +227,7 @@
                     <div class="">
                       <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://double-diner-admin.vercel.app/Login" target="_blank">Admin</a></button>
                     </div>
-                    
-                  
                 </div>
-
               </div>
 
               <div class="div-bg flex flex-col rounded-md overflow-hidden">
@@ -124,9 +239,9 @@
                     <p class="mt-1 text-base font-sans font-light text-md text-white">Household is an application that allows homeowners to post job listings, while providing a convenient platform for job seekers to find  household position.</p>
                 </div>
                 <div class="flex justify-center py-2">
-                  <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">vue.js</div>
-                  <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
-                  <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">vue.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                 </div>
                 <div class="flex justify-center py-5">
                   <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Household-management-system" target="_blank">source code</a></button>
@@ -143,9 +258,9 @@
                       <p class=" text-base text-md font-light font-sans text-white">eBooks are digital books that offer a flexible and convenient reading experience.</p>  
                   </div>
                   <div class="flex justify-center py-2">
-                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">next.js</div>
-                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
-                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">next.js</div>
+                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                   </div>
                   <div class="flex justify-center py-5">
                     <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button>
@@ -161,9 +276,9 @@
                       <p class=" text-base text-md font-light font-sans text-white">The MedOps is a software application designed to streamline the inventory management and distribution process within a medical warehouse.</p>  
                   </div>
                   <div class="flex justify-center py-2">
-                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
-                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
-                    <div class="btn mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
+                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                   </div>
                   <div class="flex justify-center py-5">
                     <!-- <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button> -->
@@ -174,11 +289,41 @@
           </div>
         </div>
 
-        <div class="pt-10 md:pt-28">
-          <h2 class="text-lg md:text-3xl font-bold text-primary-text capitalize">how to Get in touch</h2>
-          <div class="flex items-center justify-center">
-            <div><p><span class="capitalize text-lg text-white">email:</span> <span class="font-sans text-lg font-light text-white">ma07041705@gmail.com</span></p></div>
-            <div></div>
+        <div id="contact" class="pt-10 md:pt-28">
+          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">how to Get in touch</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mt-10">
+                  <div class="p-4 text-center space-y-3">
+                    <div class="icon rounded-full mx-auto w-24 h-24">
+                      <span class="material-symbols-outlined py-8 text-white">map</span>
+                    </div>
+                    <h3 class="mb-4 text-white text-lg font-bold">Address</h3>
+                    <p class="text-white hr" >Eastleigh, Nairobi</p>
+                  </div>
+
+          
+                  <div class="p-4 text-center space-y-3">
+                    <div class="icon rounded-full mx-auto w-24 h-24">
+                      <span class="material-symbols-outlined py-8 text-white">call</span>
+                    </div>
+                    <h3 class="mb-4 text-white text-lg font-bold">Phone Number</h3>
+                    <p class="text-white"><a href="tel:+254704170598">+254 704170598</a></p>
+                  </div>
+
+                  <div class="p-4 text-center space-y-3">
+                    <div class="icon rounded-full mx-auto w-24 h-24">
+                      <span class="material-symbols-outlined py-8 text-white">stacked_email</span>
+                    </div>
+                    <h3 class="mb-4 text-white text-lg font-bold">Email Address</h3>
+                    <p class="text-white"><a href="mailto:info@yoursite.com">ma07041705@gmail.com</a></p>
+                  </div>
+
+                  <div class="p-4 text-center space-y-3">
+                    <div class="icon rounded-full mx-auto w-24 h-24">
+                      <span class="material-symbols-outlined py-8 text-white">language</span>
+                    </div>
+                    <h3 class="mb-4 text-white text-lg font-bold">Website</h3>
+                    <p class="text-white"><a href="https://mohamed-a-mohamed.vercel.app/">mohamedahmed</a></p>
+                  </div>
           </div>
         </div>
     </div>
@@ -188,14 +333,57 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      loading: true, // Initially set to true to show the loading spinner
+      showMobileMenu: false,
+      showDropdown: false,
+    };
+  },
+  created() {
+    setTimeout(() => {
+      this.loading = false; // Set to false to hide the loading spinner
+    }, 2000); // Adjust the delay time as needed
+  },
 };
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+.loading-spinner {
+  /* Style for the loading spinner container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+ .nav-link:hover {
+    border-bottom: 1px solid #fbbc04; /* Set your desired border color */
+  }
+
+  /* Add a transition for link clicks */
+  .nav-link {
+    transition: border-bottom 0.3s ease; /* Adjust the timing function and duration as needed */
+  }
+
+  /* Add a transition for mobile menu button clicks */
+  .mobile-menu {
+    transition: transform 0.3s ease; /* Adjust the timing function and duration as needed */
+  }
 .bg-primary {
   background-color: #151314;
 }
@@ -203,15 +391,21 @@ export default {
 .text-primary-text {
   color: #e8cfb1;
 }
-
+.text-yr{
+  color: #fbbc04;
+}
 .btn{
   background-color:  #f1bd70;
+}
+.icon-div:hover{
+  color:white;
+  background-color: #fbbd0490
 }
 .source-btn{
   background-color: #fbbc04;
 }
 .icon {
-  background-color:  #b8d0f9;
+  background-color: rgba(255, 255, 255, 0.296);
 }
 .div-bg{
   background-color: rgba(231, 206, 176, 0.063)
