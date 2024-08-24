@@ -7,15 +7,15 @@
     <Analytics/>
    </div>
 
-  <div class="bg-primary ">
-    <div class="max-w-6xl mx-auto pt-2 px-4">
-
-      <div :class="['flex h-16 items-center fixed top-0  w-full z-50', { 'scrolled': scrolled }]">
+<div class="bg-primary ">
+ 
+<div class="max-w-6xl mx-auto pt-2 px-4">
+  <div :class="['lg:flex h-16 items-center fixed top-0  w-full z-50', { 'scrolled': scrolled }]">
           <div class="flex-shrink-0">
             <a href="/" class="text-xl font-bold text-white font-sans capitalize">Mohamed Ahmed</a>  
           </div>
        
-              <div :class="{'hidden md:flex flex-1 justify-center space-x-6': !showMobileMenu, 'mt-72 w-full flex flex-col  z-10': showMobileMenu}" >
+              <div :class="{'hidden md:flex flex-1 justify-center space-x-6': !showMobileMenu, 'mt-9 items-start bg-[#151314c9] w-full flex flex-col  z-10': showMobileMenu}" >
 
                 <transition name="slide-fade">
                   <a href="/" @click="showMobileMenu = false" :class="{'text-white  font-medium block md:inline-block nav-link': !showMobileMenu,
@@ -85,9 +85,36 @@
                 </svg>
               </button>
           </div>
-      </div> 
+  </div> 
+  </div>
+
+
+
+
+  <div>
+    <div class="relative pt-40 pb-56 ">
+      <div class="relative">
+          <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
+              <div class="grid items-center grid-cols-1 lg:grid-cols-2">
+                  <div>
+                      <h1 class="font-sans text-xl  font-normal tracking-tight text-white text-opacity-70">Software Developer</h1>
+                      <p class="mt-6 tracking-tighter text-white">
+                      
+                          <span class="font-serif italic font-normal text-7xl">Mohamed Ahmed</span>
+                      </p>
+                      <p class="font-serif italic text-base font-normal leading-7 text-white text-opacity-70">  Collaborator | Problem Solver | Innovator | Team Player</p>
+                  </div>
+
+                  <div class="hidden lg:block">
+                      <img class="w-full mx-auto hidden md:block" src="./assets/hero1.png" alt="" />
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
   
-        <div id="home" class=" flex flex-col items-center justify-center h-screen">
+        <!-- <div id="home" class=" flex flex-col items-center justify-center h-screen">
           <div class="pb-20 lg:pr-20">
             <p class="text-3xl text-white tracking-wide font-medium font-sans pb-5">Hey There!</p>
             <p class="text-3xl text-white font-bold font-sans tracking-wide pb-5">I'm Mohamed Ahmed</p>
@@ -99,10 +126,10 @@
                   <a href="https://github.com/MohamedAhmeDdev"><fa :icon="['fab', 'github' ]" class="w-7 h-7 icon cursor-pointer"/></a>
             </div>
           </div>    
-        </div>
+        </div> -->
 
      
-            
+<div class="max-w-6xl mx-auto pt-2 px-4">        
         <div id="about" class="pt-5">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
             <div class="col-span-1 lg:col-span-1 mx-auto md:mx-0">
@@ -114,7 +141,7 @@
             <div class="text-center md:text-left md:col-span-1 lg:col-span-2">
               <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">About Me</h2>
               <p class="mt-4 text-white text-md font-sans tracking-wide sm:mt-5 md:mt-5 opacity-90 leading-relaxed">
-                As a front-end developer, I am passionate about creating user-friendly software that provides a seamless experience for the end-user. 
+                As a Software Developer, I am passionate about creating user-friendly software that provides a seamless experience for the end-user. 
                 I am dedicated to the art of designing and developing attractive and intuitive interfaces that are not only visually appealing but also highly functional. I take great satisfaction in seeing my work bring joy and value to users.
               </p>
 
@@ -126,7 +153,7 @@
         </div>
 
         <div id="technologies" class="pt-32">
-          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">Technologies</h2>  
+          <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">Technologies</h2>  
             <div class="mt-10 mx-auto px-10 sm:px-0 md:px-0 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-6">
 
             <div class="icon flex flex-col icon-div overflow-hidden">
@@ -203,7 +230,7 @@
         </div>
 
         <div id="education" class="pt-32">
-          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">What I've learned</h2>
+          <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">What I've learned</h2>
           <div class="mt-10  mx-auto px-10 sm:px-0 md:px-0  grid grid-cols sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
 
             <div class="div-bg flex flex-col rounded-md overflow-hidden">
@@ -215,7 +242,6 @@
                   </p>
                   <p class="text-xl font-semibold text-white">Diploma In Software Development</p>
                   <p class="text-md text-white opacity-50">Institute Of Software Technologies</p>
-                  <p class="mt-1 text-base font-sans opacity-90 font-light text-md text-white">Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.</p>
               </div>
             </div>
 
@@ -228,20 +254,19 @@
                   </p>
                   <p class="text-xl font-semibold text-white">Certificate In Software Development</p>
                   <p class="text-md text-white opacity-50">Institute Of Software Technologies</p>
-                  <p class="mt-1 text-base font-sans opacity-90 font-light text-md text-white">Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.</p>
               </div>
             </div>
          </div>
         </div>
 
         <div id="project" class="pt-32">
-          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">What I've accomplished</h2>
+          <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">What I've accomplished</h2>
            
           <div class="mt-10  mx-auto px-10 sm:px-0 md:px-0  grid grid-cols sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
 
               <div class="div-bg flex flex-col rounded-md overflow-hidden">
                 <div class="p-3 flex-shrink-0">
-                  <img src="https://mohamedahmedm.vercel.app/image/2023-01-16%20(10).png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
+                  <img src="./assets/diner.png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
                 </div>
                 <div class="p-3 flex flex-col justify-between">
                     <p class="text-xl font-semibold text-white  text-center">Double Diner Website/App</p>
@@ -252,17 +277,10 @@
                   <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
                   <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
                 </div>
-                <div class="py-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3 justify-items-center">
-                    <div class="">
-                      <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a></button>
-                    </div>
-                    <div class="">
-                      <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://double-diner-user.vercel.app/" target="_blank">User</a></button>
-                    </div>
-                    <div class="">
-                      <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://double-diner-admin.vercel.app/Login" target="_blank">Admin</a></button>
-                    </div>
-                </div>
+                 <div class="flex justify-center py-5">
+                    <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a></button>
+                    <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://double-diner-user.vercel.app/" target="_blank">Live Display</a></button>
+                  </div>             
               </div>
 
               <div class="div-bg flex flex-col rounded-md overflow-hidden">
@@ -283,41 +301,18 @@
                   <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://household-app.vercel.app/" target="_blank">Live Display</a></button>
                 </div>
               </div>
+ 
 
               <div class="div-bg flex flex-col rounded-md overflow-hidden">
                   <div class="p-3 flex-shrink-0">
-                    <img src="https://mohamedahmedm.vercel.app/image/2022-12-26%20(2).png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
+                    <img src="./assets/amana.png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
                   </div>
                   <div class="p-3 flex flex-col justify-between ">
-                      <p class="text-xl font-semibold text-white text-center">eBook</p>
-                      <p class=" text-base text-md font-light font-sans text-white">eBooks are digital books that offer a flexible and convenient reading experience.</p>  
-                  </div>
-                  <div class="flex justify-center py-2">
-                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">next.js</div>
-                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
-                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                      <p class="text-xl font-semibold text-white text-center">Amana Virtual Solution</p>
+                      <p class=" text-base text-md font-light font-sans text-white">Impowers clients by optimizing processes and introducing cutting-edge systems that elevate the overall efficiency of their operations.</p>  
                   </div>
                   <div class="flex justify-center py-5">
-                    <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button>
-                  </div>
-              </div>  
-
-              <div class="div-bg flex flex-col rounded-md overflow-hidden">
-                  <div class="p-3 flex-shrink-0">
-                    <img src="https://static.vecteezy.com/system/resources/previews/002/115/431/original/coming-soon-business-sign-free-vector.jpg" class="h-sm-7 h-48 w-full rounded-lg object-cover">
-                  </div>
-                  <div class="p-3 flex flex-col justify-between ">
-                      <p class="text-xl font-semibold text-white text-center">medops</p>
-                      <p class=" text-base text-md font-light font-sans text-white">The MedOps is a software application designed to streamline the inventory management and distribution process within a medical warehouse.</p>  
-                  </div>
-                  <div class="flex justify-center py-2">
-                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
-                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
-                    <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
-                  </div>
-                  <div class="flex justify-center py-5">
-                    <!-- <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm capitalize"><a href="https://github.com/MohamedAhmeDdev/eBook-Next-" target="_blank">source code</a></button> -->
-                    <p class="text-2xl font-semibold text-white text-center">Ongoing</p>
+                   <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://amana-website.vercel.app/" target="_blank">Live Display</a></button>
                   </div>
               </div> 
                       
@@ -325,11 +320,11 @@
         </div>
 
         <div id="contact" class="pt-32">
-          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">How can you communicate?</h2>
+          <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">How can you communicate?</h2>
           
-          <section id="contact" class="relative w-full min-h-screen form-section flex flex-col  justify-center mt-10">
+          <section id="contact" class="relative w-full min-h-screen form-section flex flex-col  justify-center">
                 <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center">
-                    <form  @submit.prevent="sendEmail" class="w-full md:w-2/3 p-6">
+                    <form  @submit.prevent="sendEmail" class="w-full md:w-2/3 ">
                     <h2 class="text-2xl pb-3 font-semibold text-white">
                         Send Message
                     </h2>
@@ -365,7 +360,7 @@
                     </div>
 
                     <div class="w-full pt-3">
-                        <button type="submit" class="w-full border border-white rounded-full px-4 py-2 text-white transition duration-50 focus:outline-none font-semibold text-md cursor-pointer">
+                        <button type="submit" class="w-full border border-white rounded-md px-4 py-2 text-white transition duration-50 hover: focus:outline-none font-semibold text-md cursor-pointer">
                            Send
                         </button>
                     </div>
@@ -376,7 +371,7 @@
         </div>
 
         <div class="pt-32">
-          <h2 class="text-3xl md:text-3xl text-center font-bold text-white opacity-50 capitalize">how to Get in touch</h2>
+          <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">how to Get in touch</h2>
           <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mt-10">
                   <div class="p-4 text-center space-y-3">
                     <div class="icon rounded-full mx-auto w-24 h-24">
@@ -412,9 +407,9 @@
                   </div>
           </div>
         </div>
-    </div>
-    <div class="pt-10 md:pt-28">
-      <div class="container-fluid div-bg p-4 text-center">
+</div>
+<div class="pt-10 md:pt-28">
+     <div class="container-fluid div-bg p-4 text-center">
         <p class="font-sans text-lg font-light text-white">
           Mohamed Ahmed <font-awesome-icon :icon="['fas', 'copyright']" class="w-4 h-4 md:w-4 md:h-4 cursor-pointer"/>
           {{ new Date().getFullYear() }}
@@ -425,8 +420,8 @@
                     <a href="https://github.com/MohamedAhmeDdev"><fa :icon="['fab', 'github' ]" class="w-7 h-7 icon cursor-pointer"/></a>
         </div>
       </div>
-    </div>
-  </div>
+</div>
+</div>
 </div>
 </template>
 
@@ -440,7 +435,6 @@ export default {
       email: '',
       message: '',
       formSubmitted: false,
-      loading: true, // Initially set to true to show the loading spinner
       showMobileMenu: false,
       showDropdown: false,
       scrolled: false,
@@ -464,11 +458,10 @@ export default {
       })
       .then(() => {
         alert('Thank You For Contacting Me');
-        // Reset form fields after successful submission
         this.name = '';
         this.email = '';
         this.message = '';
-        this.formSubmitted = false; // Reset the form submission flag
+        this.formSubmitted = false;
       })
       .catch((err) => {
         if (err) {
@@ -479,17 +472,11 @@ export default {
 },
 
     handleScroll() {
-      // Set 'scrolled' to true when the user scrolls to a certain position
-      this.scrolled = window.scrollY > 100; // Adjust the value as needed
+      this.scrolled = window.scrollY > 100;
     },
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);
-  },
-  created() {
-    setTimeout(() => {
-      this.loading = false; // Set to false to hide the loading spinner
-    }, 2000); // Adjust the delay time as needed
   },
 };
 </script>
@@ -498,36 +485,21 @@ export default {
 html {
   scroll-behavior: smooth;
 }
-.loading-spinner {
-  /* Style for the loading spinner container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-}
+
 .scrolled {
   background-color: #151314c9;
 }
 
  .nav-link:hover {
-    border-bottom: 1px solid #fbbc04; /* Set your desired border color */
+    border-bottom: 1px solid white;
   }
 
-  /* Add a transition for link clicks */
   .nav-link {
-    transition: border-bottom 0.3s ease; /* Adjust the timing function and duration as needed */
+    transition: border-bottom 0.3s ease;
   }
 
-  /* Add a transition for mobile menu button clicks */
   .mobile-menu {
-    transition: transform 0.3s ease; /* Adjust the timing function and duration as needed */
+    transition: transform 0.3s ease; 
   }
 .bg-primary {
   background-color: #151314;
@@ -545,7 +517,7 @@ html {
 }
 .icon-div:hover{
   color:white;
-  background-color: #fbbd0490
+   background-color: rgba(255, 255, 255, 0.419);
 }
 .source-btn{
   background-color: #fbbc04;
@@ -577,5 +549,10 @@ html {
 }
 .form-section{
   background-color: rgba(231, 206, 176, 0.035)
+}
+
+.form-section button:hover{
+  background-color: white;
+  color: black;
 }
 </style>
