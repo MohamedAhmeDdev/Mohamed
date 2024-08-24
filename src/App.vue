@@ -10,7 +10,7 @@
 <div class="bg-primary ">
  
 <div class="max-w-6xl mx-auto pt-2 px-4">
-  <div :class="['lg:flex h-16 items-center fixed top-0  w-full z-50', { 'scrolled': scrolled }]">
+  <div :class="['md:flex h-16 items-center fixed top-0  w-full z-50', { 'scrolled': scrolled }]">
           <div class="flex-shrink-0">
             <a href="/" class="text-xl font-bold text-white font-sans capitalize">Mohamed Ahmed</a>  
           </div>
