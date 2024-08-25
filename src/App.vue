@@ -134,7 +134,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
             <div class="col-span-1 lg:col-span-1 mx-auto md:mx-0">
               <div class="">
-                <img src="https://avatars.githubusercontent.com/u/92859355?v=4" alt="Profile Picture" class="0 mb-4 rounded-md -z-10">
+                <img src="./assets/92859355-removebg-preview.png" alt="Profile Picture" class="0 mb-4 rounded-md -z-10">
               </div>
             </div>
 
@@ -146,7 +146,7 @@
               </p>
 
               <div class="my-4">
-                <button class="btn border-2 border-white text-white capitalize font-semibold rounded-sm mt-5 px-7 py-1"><a href="https://drive.google.com/file/d/1UADF3fkF9xY6iMofwglGkFqX6geCGtP4/view?usp=drive_link" target="_blank" >download CV</a></button>
+                <button class="btn border-2 border-white text-white capitalize font-semibold rounded-sm mt-5 px-7 py-1"><a href="https://drive.google.com/file/d/18rhzNrA0htxCk9WztPD9OPbHLlrmBgf2/view?usp=drive_link" target="_blank" >download CV</a></button>
               </div>
             </div>
           </div>
