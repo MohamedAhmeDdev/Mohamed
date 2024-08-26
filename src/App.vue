@@ -114,19 +114,6 @@
     </div>
   </div>
   
-        <!-- <div id="home" class=" flex flex-col items-center justify-center h-screen">
-          <div class="pb-20 lg:pr-20">
-            <p class="text-3xl text-white tracking-wide font-medium font-sans pb-5">Hey There!</p>
-            <p class="text-3xl text-white font-bold font-sans tracking-wide pb-5">I'm Mohamed Ahmed</p>
-            <h1 class="text-white text-xl md:text-4xl tracking-wide font-sans">Frontend Developer</h1>
-
-            
-           <div class="flex gap-2 pt-3 items-center justify-center">
-                  <a href="https://www.linkedin.com/in/mohamed-ahmed-513947241/"><fa :icon="['fab', 'linkedin' ]" class="w-7 h-7 icon cursor-pointer" /></a>
-                  <a href="https://github.com/MohamedAhmeDdev"><fa :icon="['fab', 'github' ]" class="w-7 h-7 icon cursor-pointer"/></a>
-            </div>
-          </div>    
-        </div> -->
 
      
 <div class="max-w-6xl mx-auto pt-2 px-4">        
@@ -146,7 +133,17 @@
               </p>
 
               <div class="my-4">
-                <button class="btn border-2 border-white text-white capitalize font-semibold rounded-sm mt-5 px-7 py-1"><a href="https://drive.google.com/file/d/18rhzNrA0htxCk9WztPD9OPbHLlrmBgf2/view?usp=drive_link" target="_blank" >download CV</a></button>
+                <button class="btn text-sm flex justify-center text-white capitalize font-semibold rounded-full mt-5 px-10 py-4">
+                <a href="https://drive.google.com/file/d/18rhzNrA0htxCk9WztPD9OPbHLlrmBgf2/view?usp=drive_link" target="_blank" >
+                   download CV  
+                </a>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-1 w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                  </svg>
+                </span>
+              
+                </button>
               </div>
             </div>
           </div>
@@ -485,7 +482,9 @@ export default {
 html {
   scroll-behavior: smooth;
 }
-
+.bg-primary {
+  background-color: #151314;
+}
 .scrolled {
   background-color: #151314c9;
 }
@@ -501,9 +500,6 @@ html {
   .mobile-menu {
     transition: transform 0.3s ease; 
   }
-.bg-primary {
-  background-color: #151314;
-}
 
 .text-primary-text {
   color: #e8cfb1;
@@ -511,9 +507,13 @@ html {
 .text-yr{
   color: #fbbc04;
 }
+.btn{
+  background-color:rgba(231, 206, 176, 0.063);
+  color: white;
+}
 .btn:hover{
-  background-color: white;
-  color:black;
+  background-color:rgba(231, 206, 176, 0.063);
+  color: white;
 }
 .icon-div:hover{
   color:white;
