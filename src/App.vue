@@ -321,39 +321,39 @@
           
           <section id="contact" class="relative w-full min-h-screen form-section flex flex-col  justify-center">
                 <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center">
-                    <form  @submit.prevent="sendEmail" class="w-full md:w-2/3 ">
+                  <form  @submit.prevent="sendEmail" class="w-full md:w-2/3 ">
                     <h2 class="text-2xl pb-3 font-semibold text-white">
                         Send Message
                     </h2>
                     <div>
-                        <div class="flex flex-col mb-3">
-                        <label class="text-white capitalize" for="name">Full Name</label>
-                        <input 
-                            type="text" id="name" 
-                            class="px-3 py-2 form-section rounded-md  border border-white focus:outline-none text-white"
-                            autocomplete="off" placeholder="john doe"   v-model="name"    name="name"
-                        >
-                        <p v-if="formSubmitted && !name" :class="{ 'text-red-500 text-xs italic': formSubmitted && !name }">Please enter your name.</p>
+                      
+                      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6  mb-1">
+                        <div class="sm:col-span-3">
+                          <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
+                          <div class="mt-2">
+                            <input type="text" v-model="name" name="name" placeholder="john doe" class="block w-full form-section px-3  py-2 rounded-md  border border-white focus:outline-none text-white ">
+                          </div>
+                            <p v-if="formSubmitted && !name" :class="{ 'text-red-500 text-xs italic': formSubmitted && !name }">Please enter your name.</p>
                         </div>
 
-                        <div class="flex flex-col mb-3 pt-5">
-                        <label class="text-white capitalize" for="email">Email Address</label>
-                        <input 
-                            type="text" id="email" 
-                            class="px-3 py-2 form-section rounded-md border border-white  focus:outline-none text-white"
-                            autocomplete="off" placeholder="johndoe@gmail.com"     v-model="email"    name="email"
-                        >
-                        <p v-if="formSubmitted && !email" :class="{ 'text-red-500 text-xs italic': formSubmitted && !email }">Please enter your email address.</p>
+                        <div class="sm:col-span-3">
+                          <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Email Address</label>
+                          <div class="mt-2">
+                            <input type="text" v-model="email" name="email" placeholder="johndoe@gmail.com" class="block w-full form-section px-3  py-2 rounded-md  border border-white focus:outline-none text-white ">
+                          </div>
+                            <p v-if="formSubmitted && !email" :class="{ 'text-red-500 text-xs italic': formSubmitted && !email }">Please enter your email address.</p>
                         </div>
 
-                        <div class="flex flex-col mb-3 pt-5">
-                          <label class="text-white capitalize" for="message">Message</label>
-                          <textarea 
-                              rows="4" id="message"   v-model="message"    name="message" placeholder="Briefly explain"
-                              class="px-3 py-2 form-section rounded-md border border-white  focus:outline-none text-white" 
-                          ></textarea>
-                          <p v-if="formSubmitted && !message" :class="{ 'text-red-500 text-xs italic': formSubmitted && !message }">Please enter message.</p>
-                        </div>
+                      </div>
+
+                      <div class="flex flex-col mb-3 pt-5">
+                            <label class="text-white capitalize" for="message">Message</label>
+                            <textarea 
+                                rows="4" id="message"   v-model="message"    name="message" placeholder="Briefly explain"
+                                class="px-3 py-2 form-section rounded-md border border-white  focus:outline-none text-white" 
+                            ></textarea>
+                            <p v-if="formSubmitted && !message" :class="{ 'text-red-500 text-xs italic': formSubmitted && !message }">Please enter message.</p>
+                      </div>
                     </div>
 
                     <div class="w-full pt-3">
@@ -361,7 +361,7 @@
                            Send
                         </button>
                     </div>
-                    </form>
+                  </form>
                 </div>
           </section>
 
@@ -448,7 +448,7 @@ export default {
     return;
   } else {
     emailjs
-      .sendForm('service_h3i5phy', 'template_ngr7r6j', e.target, 'mNNocNTmyGlPAiot7', {
+      .sendForm('service_tclk0di', 'template_ngr7r6j', e.target, 'mNNocNTmyGlPAiot7', {
         name: this.name,
         email: this.email,
         message: this.message
@@ -489,17 +489,17 @@ html {
   background-color: #151314c9;
 }
 
- .nav-link:hover {
+.nav-link:hover {
     border-bottom: 1px solid white;
-  }
+}
 
-  .nav-link {
+.nav-link {
     transition: border-bottom 0.3s ease;
-  }
+}
 
-  .mobile-menu {
+.mobile-menu {
     transition: transform 0.3s ease; 
-  }
+ }
 
 .text-primary-text {
   color: #e8cfb1;
