@@ -11,8 +11,8 @@
  
 <div class="max-w-6xl mx-auto pt-2 px-4">
   <div :class="['md:flex h-16 items-center fixed top-0  w-full z-50', { 'scrolled': scrolled }]">
-          <div class="flex-shrink-0">
-            <a href="/" class="text-xl font-bold text-white font-sans capitalize">Mohamed Ahmed</a>  
+          <div class="flex-shrink-0 pt-5">
+            <a href="/" class="text-xl font-bold text-white mt-30  font-sans capitalize">Mohamed Ahmed</a>  
           </div>
        
               <div :class="{'hidden md:flex flex-1 justify-center space-x-6': !showMobileMenu, 'mt-9 items-start bg-[#151314c9] w-full flex flex-col  z-10': showMobileMenu}" >
@@ -86,7 +86,7 @@
               </button>
           </div>
   </div> 
-  </div>
+</div>
 
 
 
@@ -125,14 +125,14 @@
               </div>
             </div>
 
-            <div class="text-center md:text-left md:col-span-1 lg:col-span-2">
+            <div class="text-left md:col-span-1 lg:col-span-2">
               <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">About Me</h2>
               <p class="mt-4 text-white text-md font-sans tracking-wide sm:mt-5 md:mt-5 opacity-90 leading-relaxed">
                 As a Software Developer, I am passionate about creating user-friendly software that provides a seamless experience for the end-user. 
                 I am dedicated to the art of designing and developing attractive and intuitive interfaces that are not only visually appealing but also highly functional. I take great satisfaction in seeing my work bring joy and value to users.
               </p>
 
-              <div class="my-4">
+              <div class="my-4 flex justify-center md:justify-start">
                 <button class="btn text-sm flex justify-center text-white capitalize font-semibold rounded-full mt-5 px-10 py-4">
                 <a href="https://drive.google.com/file/d/18rhzNrA0htxCk9WztPD9OPbHLlrmBgf2/view?usp=drive_link" target="_blank" >
                    download CV  
@@ -268,6 +268,12 @@
                 <div class="p-3 flex flex-col justify-between">
                     <p class="text-xl font-semibold text-white  text-center">Double Diner Website/App</p>
                     <p class="mt-1 text-base font-sans font-light text-md text-white">Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.</p>
+                      <p class="mt-1 text-base font-sans font-light text-md text-white">Access Admin route 
+                      <a href="https://double-diner-admin.vercel.app/" target="_blank"><span class="font-bold hover:border-b">Admin</span></a>
+                    </p>
+                    <p class="mt-1 text-base font-sans font-light text-md text-white">Access credentials in the 
+                      <a href="https://drive.google.com/file/d/15uvUOElyv3u7EtvefGdP3jbzcDV5wM7l/view?usp=drive_link" target="_blank"><span class="font-bold hover:border-b">documentation</span></a>
+                    </p>
                 </div>
                 <div class="flex justify-center py-2">
                   <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
@@ -312,6 +318,28 @@
                    <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://amana-website.vercel.app/" target="_blank">Live Display</a></button>
                   </div>
               </div> 
+
+                 <div class="div-bg flex flex-col rounded-md overflow-hidden">
+                <div class="p-3 flex-shrink-0">
+                  <img src="./assets/medops.png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
+                </div>
+                <div class="p-3 flex flex-col justify-between">
+                    <p class="text-xl font-semibold text-white  text-center">MedOps</p>
+                    <p class="mt-1 text-base font-sans font-light text-md text-white">software application designed to streamline the inventory management and distribution process</p>
+                    <p class="mt-1 text-base font-sans font-light text-md text-white">Access credentials in the 
+                      <a href="https://drive.google.com/file/d/1azjjWESBBsFVaWAfIHNOwTrHPW-2Ajd0/view?usp=drive_link" target="_blank"><span class="font-bold hover:border-b">documentation</span></a>
+                    </p>
+                </div>
+                <div class="flex justify-center py-2">
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                </div>
+                <div class="flex justify-center py-5">
+                  <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/medOps-v-2.0" target="_blank">source code</a></button>
+                  <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://med-ops.vercel.app/auth" target="_blank">Live Display</a></button>
+                </div>
+              </div>
                       
           </div>
         </div>
