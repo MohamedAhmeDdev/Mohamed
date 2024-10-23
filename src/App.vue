@@ -233,6 +233,18 @@
             <div class="div-bg flex flex-col rounded-md overflow-hidden">
               <div class="p-3 flex flex-col justify-between space-y-3">
                   <p>
+                    <span class="text-2xl font-bold text-yr">March</span> <span class="text-md font-bold text-yr">2024</span>
+                    <span class="text-2xl text-white text-yr">-</span>
+                    <span class="text-2xl font-bold text-yr">August</span> <span class="text-md font-bold text-yr">2024</span>
+                  </p>
+                  <p class="text-xl font-semibold text-white">Software Development</p>
+                  <p class="text-md text-white opacity-50">Moringa School</p>
+              </div>
+            </div>
+
+            <div class="div-bg flex flex-col rounded-md overflow-hidden">
+              <div class="p-3 flex flex-col justify-between space-y-3">
+                  <p>
                     <span class="text-2xl font-bold text-yr">February</span> <span class="text-md font-bold text-yr">2022</span>
                     <span class="text-2xl text-white text-yr">-</span>
                     <span class="text-2xl font-bold text-yr">January</span> <span class="text-md font-bold text-yr">2023</span>
