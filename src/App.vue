@@ -273,29 +273,51 @@
            
           <div class="mt-10  mx-auto px-10 sm:px-0 md:px-0  grid grid-cols sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5">
 
-              <div class="div-bg flex flex-col rounded-md overflow-hidden">
-                <div class="p-3 flex-shrink-0">
-                  <img src="./assets/diner.png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
+              <div class="div-bg flex flex-col rounded-md overflow-hidden"> 
+              <div class="p-3 flex-shrink-0">
+                <img src="./assets/diner.png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
+              </div>
+              <div class="p-3 flex flex-col justify-between">
+                <p class="text-xl font-semibold text-white text-center">Double Diner Website/App</p>
+                <p class="mt-1 text-base font-sans font-light text-md text-white">
+                  Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.
+                </p>
+                <p class="mt-1 text-base font-sans font-light text-md text-white">
+                  Access Admin route 
+                  <a href="https://double-diner-admin.vercel.app/" target="_blank">
+                    <span class="font-bold hover:border-b">Admin</span>
+                  </a>
+                </p>
+                <p class="mt-1 text-base font-sans font-light text-md text-white">
+                   Access 
+                  <button @click="showDoubleDinerModal = true">credentials</button>
+                </p>
+              </div>
+
+              <div class="flex justify-center py-2">
+                <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
+                <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+              </div>
+
+              <div class="flex justify-center py-5">
+                <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize">
+                  <a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a>
+                </button>
+                <button class="border border-yellow-200 rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize">
+                  <a href="https://double-diner-user.vercel.app/" target="_blank">Live Display</a>
+                </button>
+              </div>
+
+              <div v-if="showDoubleDinerModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div class="bg-white p-6 rounded-lg w-96 mx-auto">
+                  <h2 class="text-xl font-bold mb-4 text-center">Access Credentials</h2>
+                  <p class="font-bold">Role Admin</p>
+                  <p><span class="text-sm font-bold">Username:</span> mohamed@gmail.com</p>
+                  <p><span class="text-sm font-bold">Password:</span> 123456789</p>
+                  <button @click="showDoubleDinerModal = false" class="mt-4 px-4 py-2 bg-black text-white rounded">Close</button>
                 </div>
-                <div class="p-3 flex flex-col justify-between">
-                    <p class="text-xl font-semibold text-white  text-center">Double Diner Website/App</p>
-                    <p class="mt-1 text-base font-sans font-light text-md text-white">Double Diner is a food delivery service that allows customers to place orders from the comfort of their own location.</p>
-                      <p class="mt-1 text-base font-sans font-light text-md text-white">Access Admin route 
-                      <a href="https://double-diner-admin.vercel.app/" target="_blank"><span class="font-bold hover:border-b">Admin</span></a>
-                    </p>
-                    <p class="mt-1 text-base font-sans font-light text-md text-white">Access credentials in the 
-                      <a href="https://drive.google.com/file/d/15uvUOElyv3u7EtvefGdP3jbzcDV5wM7l/view?usp=drive_link" target="_blank"><span class="font-bold hover:border-b">documentation</span></a>
-                    </p>
-                </div>
-                <div class="flex justify-center py-2">
-                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
-                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
-                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
-                </div>
-                 <div class="flex justify-center py-5">
-                    <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/Double-Diner" target="_blank">source code</a></button>
-                    <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://double-diner-user.vercel.app/" target="_blank">Live Display</a></button>
-                  </div>             
+              </div>
               </div>
 
               <div class="div-bg flex flex-col rounded-md overflow-hidden">
@@ -331,16 +353,17 @@
                   </div>
               </div> 
 
-                 <div class="div-bg flex flex-col rounded-md overflow-hidden">
+                <div class="div-bg flex flex-col rounded-md overflow-hidden">
                 <div class="p-3 flex-shrink-0">
                   <img src="./assets/medops.png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
                 </div>
                 <div class="p-3 flex flex-col justify-between">
                     <p class="text-xl font-semibold text-white  text-center">MedOps</p>
                     <p class="mt-1 text-base font-sans font-light text-md text-white">software application designed to streamline the inventory management and distribution process</p>
-                    <p class="mt-1 text-base font-sans font-light text-md text-white">Access credentials in the 
-                      <a href="https://drive.google.com/file/d/1azjjWESBBsFVaWAfIHNOwTrHPW-2Ajd0/view?usp=drive_link" target="_blank"><span class="font-bold hover:border-b">documentation</span></a>
-                    </p>
+                    <p class="mt-1 text-base font-sans font-light text-md text-white">
+                      Access 
+                      <button @click="showMedopsModal = true">credentials</button>
+                </p>
                 </div>
                 <div class="flex justify-center py-2">
                   <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
@@ -351,6 +374,40 @@
                   <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://github.com/MohamedAhmeDdev/medOps-v-2.0" target="_blank">source code</a></button>
                   <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://med-ops.vercel.app/auth" target="_blank">Live Display</a></button>
                 </div>
+
+                <div v-if="showMedopsModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                  <div class="bg-white p-6 rounded-lg w-96 mx-auto">
+                   <h2 class="text-xl font-bold mb-4 text-center">Access Credentials</h2>
+                   <div class="space-y-5">
+                      <div>
+                        <p class="font-bold">1. Role manager</p>
+                        <p><span class="text-sm font-bold">Username:</span> juma ali</p>
+                        <p><span class="text-sm font-bold">Password:</span>nDSzuVF2</p>
+                      </div>
+
+                      <div>
+                        <p class="font-bold">2. Role logistics</p>
+                        <p><span class="text-sm font-bold">Username:</span>peter cain</p>
+                        <p><span class="text-sm font-bold">Password:</span>aa92qRsu</p>
+                      </div>
+
+                       <div>
+                        <p class="font-bold">3. Role Operator</p>
+                        <p><span class="text-sm font-bold">Username:</span> dom</p>
+                        <p><span class="text-sm font-bold">Password:</span>s4mcVhcT</p>
+                      </div>
+
+                      <div>
+                        <p class="font-bold">4. Role Transporter</p>
+                        <p><span class="text-sm font-bold">Username:</span> abdi</p>
+                        <p><span class="text-sm font-bold">Password:</span>fTRskDzh</p>
+                      </div>
+
+                   </div>
+                    
+                  <button @click="showMedopsModal = false" class="mt-4 px-4 py-2 bg-black text-white rounded">Close</button>
+                 </div>
+               </div>
               </div>
                       
           </div>
@@ -475,6 +532,8 @@ export default {
       showMobileMenu: false,
       showDropdown: false,
       scrolled: false,
+      showDoubleDinerModal: false,
+      showMedopsModal: false, 
     };
   },
   mounted() {
