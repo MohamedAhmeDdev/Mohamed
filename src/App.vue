@@ -134,7 +134,7 @@
 
               <div class="my-4 flex justify-center md:justify-start">
                 <button class="btn text-sm flex justify-center text-white capitalize font-semibold rounded-full mt-5 px-10 py-4">
-                <a href="https://drive.google.com/file/d/18rhzNrA0htxCk9WztPD9OPbHLlrmBgf2/view?usp=drive_link" target="_blank" >
+                <a href="https://drive.google.com/file/d/1yt61jVHaEnQ31aeEyyy5CtTLAGBZmMN4/view?usp=drive_link" target="_blank" >
                    download CV  
                 </a>
                 <span>
