@@ -409,6 +409,25 @@
                  </div>
                </div>
               </div>
+
+                   <div class="div-bg flex flex-col rounded-md overflow-hidden">
+                <div class="p-3 flex-shrink-0">
+                  <img src="./assets/rentDash.png" class="h-sm-7 h-48 w-full rounded-lg object-cover">
+                </div>
+                <div class="p-3 flex flex-col justify-between">
+                    <p class="text-xl font-semibold text-white  text-center">rentDash</p>
+                    <p class="mt-1 text-base font-sans font-light text-md text-white">rentDash is designed to streamline property management for landlords, property managers, and tenants.This application simplifies the rental process by offering tools for managing tenants.</p>
+                </div>
+                <div class="flex justify-center py-2">
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">React.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">Express.js</div>
+                  <div class="icon mx-1 px-1 rounded-sm capitalize font-light text-lg text-white">MySQL</div>
+                </div>
+                <div class="flex justify-center py-5">
+                  <!-- <button class="source-btn mx-3 py-1 px-2 rounded-sm text-md text-sm text-black capitalize"><a href="https://rentdashapp.vercel.app/" target="_blank">source code</a></button> -->
+                  <button class="border border-yellow-200  rounded-md mx-3 py-1 px-2 text-md text-sm text-white capitalize"><a href="https://rentdashapp.vercel.app/" target="_blank">Live Display</a></button>
+                </div>
+              </div>
                       
           </div>
         </div>
