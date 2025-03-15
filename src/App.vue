@@ -433,17 +433,17 @@
         </div>
 
         <div id="contact" class="pt-32">
-          <h2 class="text-3xl md:text-3xl font-bold text-white opacity-50 capitalize">How can you communicate?</h2>
+          <h2 class="text-3xl md:text-3xl pb-2 font-bold text-white opacity-50 capitalize">How can you communicate?</h2>
           
-          <section id="contact" class="relative w-full min-h-screen form-section flex flex-col  justify-center">
-                <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center">
+          <section id="contact" class="relative w-full py-10 form-section flex flex-col  justify-center">
+                <div class="relative p-5 lg:px-20 flex flex-col md:flex-row items-center justify-center ">
                   <form  @submit.prevent="sendEmail" class="w-full md:w-2/3 ">
                     <h2 class="text-2xl pb-3 font-semibold text-white">
                         Send Message
                     </h2>
                     <div>
                       
-                      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6  mb-1">
+                      <div class="mt-1 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6  mb-1">
                         <div class="sm:col-span-3">
                           <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
                           <div class="mt-2">
